@@ -1,0 +1,37 @@
+﻿<Page x:Class="Wpf_Homew3.MyCabinet"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Wpf_Homew3"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MyCabinet">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="87*"/>
+            <ColumnDefinition Width="70*"/>
+        </Grid.ColumnDefinitions>
+        <Image Name="myPhoto" Grid.Column="1" HorizontalAlignment="Left" Height="285" Margin="61,29,0,0" VerticalAlignment="Top" Width="174"/>
+        <StackPanel Orientation="Vertical">
+            <Label Content="Информация обо мне:" FontFamily="Bernard MT Condensed" FontSize="20" HorizontalAlignment="Center"/>
+            <Label Name="login" Content="Логин -" FontFamily="Baskerville Old Face" FontSize="18" HorizontalAlignment="Center"/>
+            <Label Name="fullname" Content="ФИО -" FontFamily="Baskerville Old Face" FontSize="18" HorizontalAlignment="Center"/>
+            <Label Name="age" Content="Возраст -" FontFamily="Baskerville Old Face" FontSize="18" HorizontalAlignment="Center"/>
+            <Label Name="phonenumber" Content="Номер телефона -" FontFamily="Baskerville Old Face" FontSize="18" HorizontalAlignment="Center"/>
+
+
+        </StackPanel>
+        <Label Content="Введите ФИО" Grid.Column="2" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Width="227"/>
+        <Label Content="Введите возраст" Grid.Column="2" HorizontalAlignment="Center" Margin="0,79,0,0" VerticalAlignment="Top" Width="227"/>
+        <Label Content="Введите номер телефона" Grid.Column="2" HorizontalAlignment="Center" Margin="0,145,0,0" VerticalAlignment="Top" Width="227"/>
+        <TextBox Name="newName" Grid.Column="2" HorizontalAlignment="Center" Margin="0,41,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
+        <TextBox Name="newAge" Grid.Column="2" HorizontalAlignment="Center" Margin="0,110,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
+        <TextBox Name="newPhoneNumber" Grid.Column="2" HorizontalAlignment="Center" Margin="0,176,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
+        <Button Content="Изменить профиль" Grid.Column="2" HorizontalAlignment="Center" Margin="0,247,0,0" VerticalAlignment="Top" Width="135" Click="accept_changes"/>
+        <Button Name="changePhoto" Content="Изменить фото" Grid.Column="1" HorizontalAlignment="Left" Margin="61,317,0,0" VerticalAlignment="Top" Width="174" Click="changePhoto_Click"/>
+
+    </Grid>
+</Page>
